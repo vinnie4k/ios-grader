@@ -1,5 +1,7 @@
 import { Link, Stack, Typography } from "@mui/material";
 
+import A3Final from "./a3/A3Final";
+import A3FinalGrader from "./a3/A3FinalGrader";
 import A3Midpoint from "./a3/A3Midpoint";
 import A3MidpointGrader from "./a3/A3MidpointGrader";
 import Heading from "../components/Heading";
@@ -12,7 +14,6 @@ export default function AssignmentThree() {
       <Heading name="💬 A3: ChatDev" />
       <Submission />
       <Grading />
-      {/* <Grader /> */}
       <Upload />
     </Stack>
   );
@@ -86,6 +87,9 @@ function Grading() {
 
       <A3Midpoint />
       <A3MidpointGrader />
+
+      <A3Final />
+      <A3FinalGrader />
     </Stack>
   );
 }
