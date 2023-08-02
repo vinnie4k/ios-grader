@@ -43,7 +43,7 @@ function Grading() {
           implement something but it is not seen on the app, they do not get any
           credit. If you haven’t already, check out the{" "}
           <Link
-            href="https://www.figma.com/file/5GgpFFNn2NQo7ZhgCkf20H/A3%3A-ChatDev?type=design&node-id=73%3A1062&mode=design&t=i1WDzaT0w7dtOkYY-1"
+            href="https://www.figma.com/file/kzgaF8pBYQLgjyWDyIzKSh/A3%3A-ChatDev?type=design&node-id=1%3A1199&mode=design&t=zlffVA9qym1I7G7a-1"
             color="blue.main"
           >
             Figma
