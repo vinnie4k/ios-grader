@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router-dom";
 import AssignmentOne from "./pages/AssignmentOne";
 import AssignmentTwo from "./pages/AssignmentTwo";
 import AssignmentThree from "./pages/AssignmentThree";
+import AssignmentFour from "./pages/AssignmentFour";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/a1" element={<AssignmentOne />} />
             <Route path="/a2" element={<AssignmentTwo />} />
             <Route path="/a3" element={<AssignmentThree />} />
+            <Route path="/a4" element={<AssignmentFour />} />
           </Routes>
         </Box>
       </Container>

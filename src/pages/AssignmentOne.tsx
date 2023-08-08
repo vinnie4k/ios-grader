@@ -141,7 +141,8 @@ function Grading() {
 
       <Typography variant="body2" component="p">
         If a submission is late, continue grading but let me know so I can check
-        for slip day usages.
+        for slip day usages. If you are confused or unsure about the grading,
+        please reach out to me.
       </Typography>
 
       <Typography variant="body1" component="p">
