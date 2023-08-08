@@ -82,12 +82,12 @@ export default function A3HandleSubmitFinal(
 \n====================
 \nPart IV: Creating a Post
 \n - POST request to create a post: ${score4_1}/3
-\n Part III Total: ${score4_1}/3
+\n Part IV Total: ${score4_1}/3
 \n====================
 \nPart V: Liking a Post
 \n - POST request to like a post: ${score5_1}/1
 \n - ❤️ turns red if liked, # likes goes up: ${score5_2}/1
-\n Part III Total: ${scorePart5}/2
+\n Part V Total: ${scorePart5}/2
 \n====================
 \nOTHER
 \n- Feedback Survey: ${scoreSurvey}/1

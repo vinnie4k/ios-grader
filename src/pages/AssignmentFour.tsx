@@ -1,17 +1,17 @@
 import { Link, Stack, Typography } from "@mui/material";
 
-import A3Final from "./a3/A3Final";
-import A3FinalGrader from "./a3/A3FinalGrader";
-import A3Midpoint from "./a3/A3Midpoint";
-import A3MidpointGrader from "./a3/A3MidpointGrader";
+import A4Final from "./a4/A4Final";
+import A4FinalGrader from "./a4/A4FinalGrader";
+import A4Midpoint from "./a4/A4Midpoint";
+import A4MidpointGrader from "./a4/A4MidpointGrader";
 import Heading from "../components/Heading";
 import Submission from "../components/Submission";
 import Upload from "../components/Upload";
 
-export default function AssignmentThree() {
+export default function AssignmentFour() {
   return (
     <Stack spacing="48px">
-      <Heading name="💬 A3: ChatDev" />
+      <Heading name="🧑🏻‍🍳 A4: ChefOS" />
       <Submission />
       <Grading />
       <Upload />
@@ -44,7 +44,7 @@ function Grading() {
           implement something but it is not seen on the app, they do not get any
           credit. If you haven’t already, check out the{" "}
           <Link
-            href="https://www.figma.com/file/kzgaF8pBYQLgjyWDyIzKSh/A3%3A-ChatDev?type=design&node-id=1%3A1199&mode=design&t=zlffVA9qym1I7G7a-1"
+            href="https://www.figma.com/file/rCPlphpMKQZDLFIld6x0Cj/A4%3A-ChefOS?type=design&node-id=0%3A1&mode=design&t=p1KuxUblKI9ihlJO-1"
             color="blue.main"
           >
             Figma
@@ -53,9 +53,8 @@ function Grading() {
         </Typography>
 
         <Typography variant="body2" component="p">
-          Unlike A2, there is no partial credit for the UI features. It will be
-          all or nothing. However, there will be partial credit for
-          functionality.
+          Only features implemented after the midpoint checkpoint will receive
+          partial credit.
         </Typography>
 
         <Typography variant="body1" component="p">
@@ -72,25 +71,17 @@ function Grading() {
         </Typography>
 
         <Typography variant="body1" component="p">
-          The student is also graded for having helper function calls in their{" "}
-          <Typography color="ruby.main" component="span">
-            viewDidLoad
-          </Typography>{" "}
-          method. Please check to make sure that they did this.
-        </Typography>
-
-        <Typography variant="body1" component="p">
           For extra credit, the feature must be FULLY COMPLETE. The student’s
           submission TXT file should let you know if they attempted extra
           credit.
         </Typography>
       </Stack>
 
-      <A3Midpoint />
-      <A3MidpointGrader />
+      <A4Midpoint />
+      <A4MidpointGrader />
 
-      <A3Final />
-      <A3FinalGrader />
+      <A4Final />
+      <A4FinalGrader />
     </Stack>
   );
 }
