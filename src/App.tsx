@@ -14,10 +14,10 @@ function App() {
       <Container maxWidth="md">
         <Box marginY="150px">
           <Routes>
-            <Route path="/a1/ios-grader" element={<AssignmentOne />} />
-            <Route path="/a2/ios-grader" element={<AssignmentTwo />} />
-            <Route path="/a3/ios-grader" element={<AssignmentThree />} />
-            <Route path="/a4/ios-grader" element={<AssignmentFour />} />
+            <Route path="/ios-grader/a1" element={<AssignmentOne />} />
+            <Route path="/ios-grader/a2" element={<AssignmentTwo />} />
+            <Route path="/ios-grader/a3" element={<AssignmentThree />} />
+            <Route path="/ios-grader/a4" element={<AssignmentFour />} />
           </Routes>
         </Box>
       </Container>
