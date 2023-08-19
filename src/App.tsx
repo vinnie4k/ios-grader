@@ -3,6 +3,7 @@ import theme from "./theme/theme";
 import { Box, Container } from "@mui/material";
 import { Route, Routes } from "react-router-dom";
 
+import Home from "./pages/Home";
 import AssignmentOne from "./pages/AssignmentOne";
 import AssignmentTwo from "./pages/AssignmentTwo";
 import AssignmentThree from "./pages/AssignmentThree";
@@ -14,10 +15,11 @@ function App() {
       <Container maxWidth="md">
         <Box marginY="150px">
           <Routes>
-            <Route path="/ios-grader/a1" element={<AssignmentOne />} />
-            <Route path="/ios-grader/a2" element={<AssignmentTwo />} />
-            <Route path="/ios-grader/a3" element={<AssignmentThree />} />
-            <Route path="/ios-grader/a4" element={<AssignmentFour />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/a1" element={<AssignmentOne />} />
+            <Route path="/a2" element={<AssignmentTwo />} />
+            <Route path="/a3" element={<AssignmentThree />} />
+            <Route path="/a4" element={<AssignmentFour />} />
           </Routes>
         </Box>
       </Container>
