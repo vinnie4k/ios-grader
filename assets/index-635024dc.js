@@ -215,7 +215,7 @@ Part I: Creating the Profile Page
 
  - Name, Bio: ${E}/1
 
- - Hometown, School, Major, Fav App: ${P}/1
+ - Hometown and Major: ${P}/1
 
  Part I Total: ${R}/3
 
@@ -237,7 +237,7 @@ Part III: Create the Edit Profile Page
 
  - Name, Bio: ${D}/1
 
- - Hometown, School, Major, Fav App: ${O}/1
+ - Hometown and Major: ${O}/1
 
  Part III Total: ${M}/3
 
