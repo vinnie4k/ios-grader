@@ -41,7 +41,7 @@ export default function A2Part3(prop: Part3Prop) {
           setSelected={prop.setPart3_2}
         />
         <YesNoPartial
-          name="Hometown, School, Major, Fav App"
+          name="Hometown and Major"
           hasPartial={true}
           selected={prop.part3_3}
           setSelected={prop.setPart3_3}
