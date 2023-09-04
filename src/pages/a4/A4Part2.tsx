@@ -26,13 +26,13 @@ export default function A4Part2(prop: Part2Prop) {
 
       <Stack spacing="12px">
         <YesNoPartial
-          name="Name, Image, Rating, Description"
+          name="Image"
           hasPartial={false}
           selected={prop.part2_1}
           setSelected={prop.setPart2_1}
         />
         <YesNoPartial
-          name="Servings, Time, Difficulty"
+          name="Name and Description"
           hasPartial={false}
           selected={prop.part2_2}
           setSelected={prop.setPart2_2}

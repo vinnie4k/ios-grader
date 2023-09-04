@@ -26,7 +26,7 @@ export default function A4Part1(prop: Part1Prop) {
 
       <Stack spacing="12px">
         <YesNoPartial
-          name="Cell contains Image, Name, Time, and Difficulty"
+          name="Cell contains Image, Name, Rating, and Difficulty"
           hasPartial={false}
           selected={prop.part1_1}
           setSelected={prop.setPart1_1}

@@ -64,14 +64,14 @@ export default function A4HandleSubmitFinal(
 \nStudent: ${studentName} (${studentNetID})
 \n====================
 \nPart I: Recipe CollectionView
-\n - Cell contains Image, Name, Time, and Difficulty: ${score1_1}/1
+\n - Cell contains Image, Name, Rating, and Difficulty: ${score1_1}/1
 \n - There are 2 columns and a dynamic # of cells: ${score1_2}/1
 \n - Each cell is unique and represents a different recipe: ${score1_3}/1
 \n Part I Total: ${scorePart1}/3
 \n====================
 \nPart II: Detailed Recipe View
-\n - Name, Image, Rating, Description: ${score2_1}/1
-\n - Servings, Time, Difficulty: ${score2_2}/1
+\n - Image: ${score2_1}/1
+\n - Name and Description: ${score2_2}/1
 \n - Tapping on each recipe cell pushes its own detailed view: ${score2_3}/1
 \n Part II Total: ${scorePart2}/3
 \n====================
