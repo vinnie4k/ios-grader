@@ -67,7 +67,7 @@ export default function A2HandleSubmit(
 \nPart I: Creating the Profile Page
 \n - Profile Image: ${score1_1}/1
 \n - Name, Bio: ${score1_2}/1
-\n - Hometown, School, Major, Fav App: ${score1_3}/1
+\n - Hometown and Major: ${score1_3}/1
 \n Part I Total: ${scorePart1}/3
 \n====================
 \nPart II: Push the Edit Profile Page
@@ -78,7 +78,7 @@ export default function A2HandleSubmit(
 \nPart III: Create the Edit Profile Page
 \n - Profile Image: ${score3_1}/1
 \n - Name, Bio: ${score3_2}/1
-\n - Hometown, School, Major, Fav App: ${score3_3}/1
+\n - Hometown and Major: ${score3_3}/1
 \n Part III Total: ${scorePart3}/3
 \n====================
 \nPart IV: Pop the Edit Profile Page
