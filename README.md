@@ -6,7 +6,7 @@
 ![figma-badge](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
 ## Overview
-Assignment grader for CS 1998-601: Intro to iOS Development. Built with React and Material UI using Vite.
+Assignment grader for CS 1998-601: Intro to iOS Development. Built with React and Material UI using Vite. You can view the website [here](https://vinnie4k.github.io/ios-grader/).
 
 ## Design + Development
 - Implemented a design system to be used throughout the design journey, including colors, typography, etc.
