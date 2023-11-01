@@ -17,16 +17,16 @@ export default function A4HandleSubmitFinal(
   part4_1: string,
   part5_1: string,
   part5_2: string,
-  part5_3: string,
   extra_1: string,
   extra_2: string,
   extra_3: string,
   extra_4: string,
   survey: boolean,
+  helpers: boolean,
   crash: boolean,
   comments: string
 ) {
-  const score1_1 = calculateScore(part1_1, 1);
+  const score1_1 = calculateScore(part1_1, 2);
   const score1_2 = calculateScore(part1_2, 1);
   const score1_3 = calculateScore(part1_3, 1);
   const scorePart1 = score1_1 + score1_2 + score1_3;
@@ -41,16 +41,22 @@ export default function A4HandleSubmitFinal(
   const score3_3 = calculateScore(part3_3, 1);
   const scorePart3 = score3_1 + score3_2 + score3_3;
 
-  const score4_1 = calculateScore(part4_1, 2);
+  const score4_1 = calculateScore(part4_1, 1);
 
   const score5_1 = calculateScore(part5_1, 1);
   const score5_2 = calculateScore(part5_2, 1);
-  const score5_3 = calculateScore(part5_3, 1);
-  const scorePart5 = score5_1 + score5_2 + score5_3;
+  const scorePart5 = score5_1 + score5_2;
 
   const scoreSurvey = survey ? 1 : 0;
+  const scoreHelpers = helpers ? 1 : 0;
   const subtotal =
-    scorePart1 + scorePart2 + scorePart3 + score4_1 + scorePart5 + scoreSurvey;
+    scorePart1 +
+    scorePart2 +
+    scorePart3 +
+    score4_1 +
+    scorePart5 +
+    scoreSurvey +
+    scoreHelpers;
   const scoreCrash = crash ? -1 : 0;
   const scoreExtra1 = calculateScore(extra_1, 1);
   const scoreExtra2 = calculateScore(extra_2, 1);
@@ -64,10 +70,10 @@ export default function A4HandleSubmitFinal(
 \nStudent: ${studentName} (${studentNetID})
 \n====================
 \nPart I: Recipe CollectionView
-\n - Cell contains Image, Name, Rating, and Difficulty: ${score1_1}/1
+\n - Cell contains Image, Name, Rating, and Difficulty: ${score1_1}/2
 \n - There are 2 columns and a dynamic # of cells: ${score1_2}/1
 \n - Each cell is unique and represents a different recipe: ${score1_3}/1
-\n Part I Total: ${scorePart1}/3
+\n Part I Total: ${scorePart1}/4
 \n====================
 \nPart II: Detailed Recipe View
 \n - Image: ${score2_1}/1
@@ -82,17 +88,17 @@ export default function A4HandleSubmitFinal(
 \n Part III Total: ${scorePart3}/3
 \n====================
 \nPart IV: Fetching Recipes
-\n - GET request to fetch all recipes: ${score4_1}/2
-\n Part IV Total: ${score4_1}/2
+\n - GET request to fetch all recipes: ${score4_1}/1
+\n Part IV Total: ${score4_1}/1
 \n====================
 \nPart V: Bookmark Recipes
-\n - Saved recipes have a filled bookmark icon: ${score5_1}/1
-\n - Bookmarking updates CollectionView using delegation: ${score5_2}/1
-\n - Saved recipes are stored locally via UserDefaults: ${score5_3}/1
-\n Part V Total: ${scorePart5}/3
+\n - Bookmarking updates CollectionView using delegation: ${score5_1}/1
+\n - Saved recipes are stored locally via UserDefaults: ${score5_2}/1
+\n Part V Total: ${scorePart5}/2
 \n====================
 \nOTHER
 \n- Feedback Survey: ${scoreSurvey}/1
+\n- viewDidLoad calls helpers: ${scoreHelpers}/1
 \n====================
 \nSUBTOTAL: ${subtotal}/15
 \n- EC1: Custom back button: +${scoreExtra1}

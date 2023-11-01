@@ -16,7 +16,7 @@ export default function A4HandleSubmitMidpoint(
   part3_3: string,
   comments: string
 ) {
-  const score1_1 = calculateScore(part1_1, 1);
+  const score1_1 = calculateScore(part1_1, 2);
   const score1_2 = calculateScore(part1_2, 1);
   const score1_3 = calculateScore(part1_3, 1);
   const scorePart1 = score1_1 + score1_2 + score1_3;
@@ -38,10 +38,10 @@ export default function A4HandleSubmitMidpoint(
 \nStudent: ${studentName} (${studentNetID})
 \n====================
 \nPart I: Recipe CollectionView
-\n - Cell contains Image, Name, Rating, and Difficulty: ${score1_1}/1
+\n - Cell contains Image, Name, Rating, and Difficulty: ${score1_1}/2
 \n - There are 2 columns and a dynamic # of cells: ${score1_2}/1
 \n - Each cell is unique and represents a different recipe: ${score1_3}/1
-\n Part I Total: ${scorePart1}/3
+\n Part I Total: ${scorePart1}/4
 \n====================
 \nPart II: Detailed Recipe View
 \n - Image: ${score2_1}/1

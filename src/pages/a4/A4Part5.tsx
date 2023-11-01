@@ -29,22 +29,16 @@ export default function A4Part5(prop: Part5Prop) {
 
       <Stack spacing="12px">
         <YesNoPartial
-          name="Saved recipes have a filled bookmark icon"
+          name="Bookmarking updates CollectionView using delegation"
           hasPartial={true}
           selected={prop.part5_1}
           setSelected={prop.setPart5_1}
         />
         <YesNoPartial
-          name="Bookmarking updates CollectionView using delegation"
+          name="Saved recipes are stored locally via UserDefaults"
           hasPartial={true}
           selected={prop.part5_2}
           setSelected={prop.setPart5_2}
-        />
-        <YesNoPartial
-          name="Saved recipes are stored locally via UserDefaults"
-          hasPartial={true}
-          selected={prop.part5_3}
-          setSelected={prop.setPart5_3}
         />
       </Stack>
     </Stack>
@@ -54,8 +48,6 @@ export default function A4Part5(prop: Part5Prop) {
 interface Part5Prop {
   part5_1: string;
   part5_2: string;
-  part5_3: string;
   setPart5_1: React.Dispatch<React.SetStateAction<string>>;
   setPart5_2: React.Dispatch<React.SetStateAction<string>>;
-  setPart5_3: React.Dispatch<React.SetStateAction<string>>;
 }

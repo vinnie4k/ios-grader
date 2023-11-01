@@ -29,13 +29,13 @@ export default function A3FinalGrader() {
   const [part4_1, setPart4_1] = useState("");
   const [part5_1, setPart5_1] = useState("");
   const [part5_2, setPart5_2] = useState("");
-  const [part5_3, setPart5_3] = useState("");
   const [extra_1, setExtra_1] = useState("");
   const [extra_2, setExtra_2] = useState("");
   const [extra_3, setExtra_3] = useState("");
   const [extra_4, setExtra_4] = useState("");
   const [survey, setSurvey] = useState(false);
   const [crash, setCrash] = useState(false);
+  const [helpers, setHelpers] = useState(false);
   const [comments, setComments] = useState("");
 
   return (
@@ -94,10 +94,8 @@ export default function A3FinalGrader() {
         <A4Part5
           part5_1={part5_1}
           part5_2={part5_2}
-          part5_3={part5_3}
           setPart5_1={setPart5_1}
           setPart5_2={setPart5_2}
-          setPart5_3={setPart5_3}
         />
 
         <A4Extra
@@ -119,8 +117,10 @@ export default function A3FinalGrader() {
             <A4Other
               survey={survey}
               crash={crash}
+              helpers={helpers}
               setSurvey={setSurvey}
               setCrash={setCrash}
+              setHelpers={setHelpers}
             />
             <Comments comments={comments} setComments={setComments} />
           </Stack>
@@ -148,12 +148,12 @@ export default function A3FinalGrader() {
               part4_1,
               part5_1,
               part5_2,
-              part5_3,
               extra_1,
               extra_2,
               extra_3,
               extra_4,
               survey,
+              helpers,
               crash,
               comments
             );
