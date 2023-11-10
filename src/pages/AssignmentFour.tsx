@@ -2,8 +2,8 @@ import { Link, Stack, Typography } from "@mui/material";
 
 import A4Final from "./a4/A4Final";
 import A4FinalGrader from "./a4/A4FinalGrader";
-import A4Midpoint from "./a4/A4Midpoint";
-import A4MidpointGrader from "./a4/A4MidpointGrader";
+// import A4Midpoint from "./a4/A4Midpoint";
+// import A4MidpointGrader from "./a4/A4MidpointGrader";
 import Heading from "../components/Heading";
 import Submission from "../components/Submission";
 import Upload from "../components/Upload";
@@ -34,9 +34,9 @@ function Grading() {
         </Stack>
 
         <Typography variant="body2" component="p">
-          If a submission is late, continue grading but let me know so I can
-          check for slip day usages. If you are confused or unsure about the
-          grading, please reach out to me.
+          Instructors should have already handled slip day usages so you can
+          proceed even if the submission is late. If you are confused or unsure
+          about the grading, please reach out to me.
         </Typography>
 
         <Typography variant="body1" component="p">
@@ -77,8 +77,9 @@ function Grading() {
         </Typography>
       </Stack>
 
+      {/* Temporarily Commented Out
       <A4Midpoint />
-      <A4MidpointGrader />
+      <A4MidpointGrader /> */}
 
       <A4Final />
       <A4FinalGrader />

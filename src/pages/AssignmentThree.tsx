@@ -2,8 +2,8 @@ import { Link, Stack, Typography } from "@mui/material";
 
 import A3Final from "./a3/A3Final";
 import A3FinalGrader from "./a3/A3FinalGrader";
-import A3Midpoint from "./a3/A3Midpoint";
-import A3MidpointGrader from "./a3/A3MidpointGrader";
+// import A3Midpoint from "./a3/A3Midpoint";
+// import A3MidpointGrader from "./a3/A3MidpointGrader";
 import Heading from "../components/Heading";
 import Submission from "../components/Submission";
 import Upload from "../components/Upload";
@@ -34,9 +34,9 @@ function Grading() {
         </Stack>
 
         <Typography variant="body2" component="p">
-          If a submission is late, continue grading but let me know so I can
-          check for slip day usages. If you are confused or unsure about the
-          grading, please reach out to me.
+          Instructors should have already handled slip day usages so you can
+          proceed even if the submission is late. If you are confused or unsure
+          about the grading, please reach out to me.
         </Typography>
 
         <Typography variant="body1" component="p">
@@ -86,8 +86,9 @@ function Grading() {
         </Typography>
       </Stack>
 
+      {/* Temporarily Commented Out
       <A3Midpoint />
-      <A3MidpointGrader />
+      <A3MidpointGrader /> */}
 
       <A3Final />
       <A3FinalGrader />

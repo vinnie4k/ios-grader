@@ -179,9 +179,9 @@ function Grading() {
       </Stack>
 
       <Typography variant="body2" component="p">
-        If a submission is late, continue grading but let me know so I can check
-        for slip day usages. If you are confused or unsure about the grading,
-        please reach out to me.
+        Instructors should have already handled slip day usages so you can
+        proceed even if the submission is late. If you are confused or unsure
+        about the grading, please reach out to me.
       </Typography>
 
       <Typography variant="body1" component="p">
