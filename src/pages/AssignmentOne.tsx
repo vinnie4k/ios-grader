@@ -1,4 +1,4 @@
-import { Box, Button, Link, Stack, Typography } from "@mui/material";
+import { Box, Button, Stack, Typography } from "@mui/material";
 import { useState } from "react";
 
 import A1GettingStarted from "./a1/A1GettingStarted";
@@ -168,16 +168,9 @@ function Grading() {
       </Box>
 
       <Typography variant="body1" component="p">
-        This{" "}
-        <Link
-          href="https://docs.google.com/spreadsheets/d/1sT6ManOm_utQIro1uaX3ahWe4WtoXzPlism8ULNRrzI/edit?usp=sharing"
-          color="blue.main"
-        >
-          spreadsheet
-        </Link>{" "}
-        contains the responses to the feedback survey. Look for the student’s
-        name and NetID. Make sure that the student has a response for the
-        correct assignment (under the Assignment column).
+        Points given for the feedback survey is up to the instuctors'
+        discretion. Please reach out to the instructors if there are any
+        questions.
       </Typography>
     </Stack>
   );
